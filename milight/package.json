@@ -1,0 +1,15 @@
+{
+  "name": "gladys-milight",
+  "version": "0.1.0",
+  "description": "This module enable Milight lamp control in Gladys",
+  "keywords": [
+    "milight",
+    "lamp",
+    "gladys"
+  ],
+  "dependencies": {
+    "node-milight-promise": "0.0.9"
+  },
+  "author": "Michael Caprice Lindsey",
+  "license": "CC-BY-NC-SA-3.0"
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "code": "at-home",
+    "name": "At Home",
+    "description": "You are at home"
+  },
+  {
+    "code": "coming-back-home",
+    "name": "Coming back home",
+    "description": "You are coming back home"
+  },
+  {
+    "code": "holidays",
+    "name": "Holidays",
+    "description": "You are in holiday"
+  },
+  {
+    "code": "out",
+    "name": "Out",
+    "description": "You are out !"
+  },
+  {
+    "code": "nap",
+    "name": "Nap",
+    "description": "You are taking a little nap"
+  },
+  {
+    "code": "sleep",
+    "name": "Sleep",
+    "description": "You are sleeping"
+  },
+  {
+    "code": "romantic",
+    "name": "Romantic",
+    "description": "Romantic mode ;)"
+  },
+  {
+    "code": "party",
+    "name": "Party",
+    "description": "Time to party !"
+  },
+  {
+    "code": "cinema",
+    "name": "Cinema",
+    "description": "You are watching a movie"
+  }
+]

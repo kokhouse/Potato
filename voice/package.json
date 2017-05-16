@@ -1,0 +1,27 @@
+{
+  "name": "gladys-voice",
+  "version": "0.1.0",
+  "description": "To be able to speak to Gladys !",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "home",
+    "gladys",
+    "gladysproject",
+    "assistant",
+    "automation",
+    "jarvis",
+    "artificial",
+    "intelligence",
+    "domotique"
+  ],
+  "author": "Michael Caprice Lindsey",
+  "license": "CC-BY-NC-SA-3.0",
+  "dependencies": {
+    "google-cloud": "^0.41.2",
+    "request": "^2.75.0",
+    "sonus": "^0.1.0"
+  }
+}

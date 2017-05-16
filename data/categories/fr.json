@@ -1,0 +1,37 @@
+[
+	{
+		"service": "device",
+		"name": "Device",
+		"image": "/img/category/device.jpg"
+	},
+	{
+		"service": "sun",
+		"name": "Soleil",
+		"image": "/img/category/sun.jpg"
+	},
+	{
+		"service": "alarm",
+		"name": "Alarme",
+		"image": "/img/category/alarm.jpg"
+	},
+	{
+		"service": "user",
+		"name": "Utilisateur",
+		"image": "/img/category/user.jpg"
+	},
+	{
+		"service": "area",
+		"name": "Zone",
+		"image": "/img/category/area.jpg"
+	},
+	{
+		"service": "system",
+		"name": "Système",
+		"image": "/img/category/system.jpg"
+	},
+	{
+		"service": "house",
+		"name": "Maison",
+		"image": "/img/category/house.jpg"
+	}
+]

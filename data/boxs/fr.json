@@ -1,0 +1,30 @@
+[
+  {
+    "uuid": "81afa4ed-c084-45b3-ba8a-e9e22c9753ae",
+    "title": "Calendrier",
+    "ngcontroller": "calendarCtrl as vm",
+    "html": "<!--The calendar -->                                    <div id=\"calendar\" style=\"width: 100%\"></div>",
+    "footer": "<div class=\"row\">                                         <div class=\"col-sm-6\">                                             <!-- Progress bars -->                                             <div class=\"clearfix ng-cloak\" ng-repeat=\"dayevent in vm.dayEvents\" >                                                 <span class=\"pull-left\">{{dayevent.summary}}</span>                                                 <small class=\"pull-right\">{{dayevent.period}}</small>                                             </div>                                          </div><!-- /.col -->                                                                              </div><!-- /.row -->",
+    "icon": "fa fa-calendar",
+    "type": "box box-solid bg-green-gradient",
+    "view": "dashboard"
+  },
+  {
+    "uuid": "3b78ede7-5ee7-4504-a932-2e9d7c3413f2",
+    "title": "Déclencher Event",
+    "ngcontroller": "EventBoxCtrl as vm",
+    "icon": "fa fa-dot-circle-o",
+    "type": "box box-success",
+    "html": "<div class=\"row ng-cloak\">    <div class=\"col-md-4\">        <select ng-model=\"vm.newEvent.code\" class=\"form-control\" ><option ng-repeat=\"eventType in vm.eventTypes\" value=\"{{eventType.code}}\">{{eventType.name}}<\/option>        <\/select>    <\/div>    <div class=\"col-md-4\">        <select ng-model=\"vm.newEvent.user\" class=\"form-control\" ><option ng-repeat=\"user in vm.users\" value=\"{{user.id}}\">{{user.firstname}} {{user.lastname}}<\/option>        <\/select>    <\/div>    <div class=\"col-md-4\">        <select ng-model=\"vm.newEvent.house\" class=\"form-control\" ><option ng-repeat=\"house in vm.houses\" value=\"{{house.id}}\">{{house.name}}<\/option>        <\/select>    <\/div><\/div><div class=\"row\" style=\"margin-top:20px;\">    <div class=\"col-md-12\"> <button class=\"btn btn-block btn-success\" ng-click=\"vm.createEvent(vm.newEvent);\">Créer<\/button><\/div><\/div>",
+    "view": "dashboard"
+  },
+  {
+    "uuid": "887eec64-b54d-40d2-a35c-dc99e3d5a2ee",
+    "title": "Musique",
+    "ngcontroller": "MusicCtrl as vm",
+    "icon": "fa fa-music",
+    "type": "box box-info",
+    "html": "<div ng-show=\"vm.roomId\" class=\"ng-cloak\"><div class=\"row\"  style=\"margin-bottom: 20px\">    <center>{{vm.currentTrack.title}} - {{vm.currentTrack.artist}}<\/center>  <\/div>  <div class=\"row\" style=\"margin-bottom: 20px\">    \t<div class=\"col-xs-offset-4 col-xs-1\">          <button ng-click=\"vm.previous();\" class=\"btn btn-default\"><i class=\"fa fa-fast-backward\"><\/i><\/button>    \t<\/div>    \t<div class=\"col-xs-1\">          <button ng-click=\"vm.stop();\" class=\"btn btn-default\"><i class=\"fa fa-stop\"><\/i><\/button>    \t<\/div>    \t    \t<div class=\"col-xs-1\">          <button ng-show=\"vm.playing\" ng-click=\"vm.pause();\" class=\"btn btn-default\"><i class=\"fa fa-pause\"><\/i><\/button>           <button ng-show=\"!vm.playing\" ng-click=\"vm.play();\" class=\"btn btn-default\"><i class=\"fa fa-play\"><\/i><\/button>    \t<\/div><div class=\"col-xs-1\">          <button ng-click=\"vm.next();\" class=\"btn btn-default\"><i class=\"fa fa-fast-forward\"><\/i><\/button>    \t<\/div>  <\/div>  <div class=\"table-responsive\" ng-show=\"vm.queue && vm.queue.length\" style=\"height: 200px; overflow:auto;\"><table class=\"table \">\t<tbody>    <tr>      <th>Titre<\/th>      <th>Artiste<\/th>      <th>Album<\/th>    <\/tr>    <tr ng-repeat=\"music in vm.queue\">      <td>{{music.title}}<\/td>      <td>{{music.artist}}<\/td>      <td>{{music.album}}<\/td>    <\/tr>  <\/tbody><\/table><\/div><\/div><div ng-show=\"vm.displayAskRoomForm\" class=\"ng-cloak\">  <p>S\u00E9lectionnez la pi\u00E8ce ou est situ\u00E9 le lecteur de musique que vous souhaitez contr\u00F4ler dans cette box : <\/p>  <div class=\"row\">      <div class=\"col-xs-offset-2 col-xs-6\">        <select ng-model=\"vm.selectedRoomId\" class=\"form-control\" >                <option ng-repeat=\"room in vm.rooms\" value=\"{{room.id}}\">{{room.name}}<\/option>        <\/select>      <\/div>      <div class=\"col-xs-2\">        <button class=\"btn btn-success\" ng-click=\"vm.selectRoomId(vm.selectedRoomId);\">Valider<\/button>      <\/div>  <\/div><\/div>",
+    "view": "dashboard"
+  }
+]

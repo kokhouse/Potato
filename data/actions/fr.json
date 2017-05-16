@@ -1,0 +1,124 @@
+[
+	{
+		"uuid": "04340a8b-a177-4247-aca5-5d12bfda6ce0",
+		"service": "deviceType",
+		"function": "exec",
+		"name": "DeviceType exec",
+		"description": "Change l'état d'un device. (Allumage d'une lampe, etc... )",
+		"params": [
+			{
+				"name": "Device Type",
+				"variablename": "devicetype",
+				"path":  "/devicetype"
+			},
+			{
+				"name": "Value",
+				"variablename": "value"
+			}
+		]
+	},
+	{
+		"uuid": "5c311d0d-427b-4ae8-b470-2c693e58ab8e",
+		"service": "script",
+		"function": "exec",
+		"name": "Exécute un script",
+		"description": "Exécute un script donné en paramètre",
+		"params": [
+			{
+				"name": "Script",
+				"variablename": "id",
+				"path": "/script"
+			}
+		]
+	},
+	{
+		"uuid": "c038bfb3-5c01-496a-8513-07806aa84401",
+		"service": "event",
+		"function": "create",
+		"name": "Nouvel évènement",
+		"description": "Créé un évènement, qui peut lui même déclencher un scénario.",
+		"params": [
+			{
+				"name": "Code",
+				"variablename": "eventtype",
+				"path" : "/eventtype"
+			},
+			{
+				"name": "Utilisateur",
+				"variablename": "user",
+				"path" : "/user"
+			},
+			{
+				"name": "Maison",
+				"variablename": "house",
+				"path" : "/house"
+			},
+			{
+				"name": "Pièce",
+				"variablename": "room",
+				"path" : "/room"
+			}
+
+		]
+	},
+	{
+		"uuid": "103d5e06-47b7-4cd0-814f-e18bcfc77f02",
+		"service": "notification",
+		"function": "create",
+		"name": "Nouvelle notification",
+		"description": "Créé une notification Gladys.",
+		"params": [
+			{
+				"name": "Title",
+				"variablename": "title"
+			},
+			{
+				"name": "Text",
+				"variablename": "text"
+			},
+			{
+				"name": "Priority",
+				"variablename": "priority"
+			},
+			{
+				"name": "Icon",
+				"variablename": "icon"
+			},
+			{
+				"name": "IconColor",
+				"variablename": "iconColor"
+			},
+			{
+				"name": "User",
+				"variablename": "user",
+				"path" : "/user"
+			}
+
+		]
+	},
+	{
+		"uuid": "8bc231a2-b0f2-4702-bee1-0858851abe73",
+		"service": "utils",
+		"function": "request",
+		"name": "Lance une requête HTTP",
+		"description": "Envoie une requête HTTP avec les paramètres donnés.",
+		"params": [
+			{
+				"name": "Url",
+				"variablename": "url"
+			},
+			{
+				"name": "Méthode (GET/POST etc...)",
+				"variablename": "method"
+			},
+			{
+				"name": "Body",
+				"variablename": "body"
+			},
+			{
+				"name": "Json (true/false)",
+				"variablename": "json"
+			}
+		]
+	}
+]

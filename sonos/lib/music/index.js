@@ -1,0 +1,17 @@
+module.exports = {
+    flushQueue: require('./sonos.music.flushQueue.js'),
+    getCurrentTrack: require('./sonos.music.getCurrentTrack.js'),
+    getMuted: require('./sonos.music.getMuted.js'),
+    getPlaying: require('./sonos.music.getPlaying.js'),
+    getPlaylists: require('./sonos.music.getPlaylists.js'),
+    getQueue: require('./sonos.music.getQueue.js'),
+    getVolume: require('./sonos.music.getVolume.js'),
+    next: require('./sonos.music.next.js'),
+    pause: require('./sonos.music.pause.js'),
+    play: require('./sonos.music.play.js'),
+    playPlaylist: require('./sonos.music.playPlaylist.js'),
+    previous: require('./sonos.music.previous.js'),
+    setMuted: require('./sonos.music.setMuted.js'),
+    setVolume: require('./sonos.music.setVolume.js'),
+    stop: require('./sonos.music.stop.js'),
+};

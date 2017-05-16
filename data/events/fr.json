@@ -1,0 +1,201 @@
+[
+  {
+    "code": "back-at-home",
+    "name": "Retour à la maison",
+    "description": "Un utilisateur vient de rentrer à la maison",
+    "service": 0,
+    "category": "user",
+    "faIcon": "fa fa-home",
+    "iconColor": "bg-light-blue",
+    "params": [
+      {
+         "name": "Maison",
+         "variablename": "house",
+         "path": "/house"
+      },
+      {
+         "name": "Utilisateur",
+         "variablename": "user",
+         "path": "/user"
+      }
+    ]
+  },
+  {
+    "code": "left-home",
+    "name": "Départ de la maison",
+    "description": "Un utilisateur vient de partir de la maison",
+    "service": 0,
+    "category": "user",
+    "faIcon": "fa fa-home",
+    "iconColor": "bg-light-blue",
+    "params": [
+      {
+         "name": "Maison",
+         "variablename": "house",
+         "path": "/house"
+      },
+      {
+         "name": "Utilisateur",
+         "variablename": "user",
+         "path": "/user"
+      }
+    ]
+  },
+  {
+    "code": "wake-up",
+    "name": "Réveil",
+    "description": "Vous vous réveillez !",
+    "service": 0,
+    "category": "user",
+    "faIcon": "fa fa-bed",
+    "iconColor": "bg-yellow"
+  },
+  {
+    "code": "going-to-sleep",
+    "name": "Va se coucher",
+    "description": "Vous allez vous coucher",
+    "service": 0,
+    "category": "user",
+    "faIcon": "fa fa-bed",
+    "iconColor": "bg-blue"
+  },
+  {
+    "code": "gladys-installed",
+    "name": "Gladys installée",
+    "description": "Gladys s'est installée",
+    "service": 0,
+    "category": "system",
+    "faIcon": "fa fa-desktop",
+    "iconColor": "bg-black"
+  },
+  {
+    "code": "gladys-updated",
+    "name": "Gladys mise à jour",
+    "description": "Gladys s'est mise à jour",
+    "service": 0,
+    "category": "system",
+    "faIcon": "fa fa-wrench",
+    "iconColor": "bg-black"
+  },
+  {
+    "code": "sunrise",
+    "name": "Lever de soleil",
+    "description": "Quand le soleil se lève",
+    "service": 0,
+    "category": "sun",
+    "faIcon": "fa fa-sun-o",
+    "iconColor": "bg-yellow",
+    "params": [
+      {
+         "name": "Maison",
+         "variablename": "house",
+         "path": "/house"
+      }
+    ]
+  },
+  {
+    "code": "sunset",
+    "name": "Coucher de soleil",
+    "description": "Quand le soleil se couche",
+    "service": 0,
+    "category": "sun",
+    "faIcon": "fa fa-sun-o",
+    "iconColor": "bg-yellow",
+    "params": [
+      {
+         "name": "Maison",
+         "variablename": "house",
+         "path": "/house"
+      }
+    ]
+  },
+  {
+    "code": "alarm",
+    "name": "Alarme",
+    "description": "Quand une alarme se déclenche.",
+    "service": 0,
+    "category": "alarm",
+    "faIcon": "fa fa-clock-o",
+    "iconColor": "bg-yellow",
+    "params": [
+      {
+         "name": "Alarme",
+         "variablename": "alarm",
+         "path": "/alarm"
+      }
+    ]
+  },
+  {
+    "code": "enter-area",
+    "name": "Entrée dans une zone",
+    "description": "Quand vous entrez dans une zone.",
+    "service": 0,
+    "category": "area",
+    "faIcon": "fa fa-map-marker",
+    "iconColor": "bg-black",
+    "params": [
+      {
+         "name": "Zone",
+         "variablename": "id",
+         "path": "/area"
+      }
+    ]
+  },
+  {
+    "code": "left-area",
+    "name": "Départ d'une zone",
+    "description": "Quand vous quittez une zone.",
+    "service": 0,
+    "category": "area",
+    "faIcon": "fa fa-map-marker",
+    "iconColor": "bg-black",
+    "params": [
+      {
+         "name": "Area",
+         "variablename": "id",
+         "path": "/area"
+      }
+    ]
+  },
+  {
+    "code": "devicetype-new-value",
+    "name": "Nouvelle valeur deviceType",
+    "description": "Par exemple, quand une lampe est allumée, quand un capteur enregistre une valeur",
+    "service": "deviceType",
+    "category": "device",
+    "faIcon": "fa fa-circle-o",
+    "iconColor": "bg-light-blue",
+    "params": [
+      {
+         "name": "DeviceType",
+         "variablename": "devicetype",
+         "path": "/devicetype"
+      },
+      {
+        "name": "Value",
+        "variablename": "value"
+      }
+    ]
+  },
+  {
+    "code": "house-mode-changed",
+    "name": "Changement de mode",
+    "description": "Cet évènement est déclenché quand une maison change de mode.",
+    "service": "mode",
+    "category": "house",
+    "faIcon": "fa fa-home",
+    "iconColor": "bg-blue",
+    "params": [
+      {
+        "name": "Maison",
+        "variablename": "house",
+        "path": "/house"
+      },
+      {
+        "name": "Mode",
+        "variablename": "mode",
+        "path": "/mode"
+      }
+    ]
+  }
+]

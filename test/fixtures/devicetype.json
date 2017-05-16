@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,  
+    "name": "Switch",
+    "identifier": "UNIQUE_IDENTIFIER",
+    "type": "binary",
+    "category": "light",
+    "tag": "light",
+    "sensor": false,
+    "device": 1,
+    "min": 0,
+    "max": 1 
+  },
+  {
+    "id": 2,  
+    "name": "name",
+    "type":"multilevel",
+    "sensor": false,
+    "tag": "light",
+    "unit": "color",
+    "min": 0,
+    "max": 100,
+    "device": 1
+  },
+  {
+    "id": 3,  
+    "name": "other name",
+    "type": "binary",
+    "sensor": false,
+    "device": 2,
+    "min": 0,
+    "max": 1
+  },
+  {
+    "id": 4,  
+    "name": "Music player",
+    "type": "music",
+    "sensor": false,
+    "device": 3,
+    "min": 0,
+    "max": 0
+  }
+]

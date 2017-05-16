@@ -1,0 +1,47 @@
+[
+  {
+    "code": "at-home",
+    "name": "A la maison",
+    "description": "Vous êtes chez vous !"
+  },
+  {
+    "code": "coming-back-home",
+    "name": "Sur le chemin du retour",
+    "description": "Vous êtes en train de rentrer à la maison."
+  },
+  {
+    "code": "holidays",
+    "name": "Vacances",
+    "description": "Vous êtes partis en vacances, la maison est vide."
+  },
+  {
+    "code": "out",
+    "name": "Sortie",
+    "description": "Vous êtes sorti pour quelques heures/la journée ( au travail, en soirée, chez des amis )"
+  },
+  {
+    "code": "nap",
+    "name": "Sieste",
+    "description": "Vous faites une petite sieste."
+  },
+  {
+    "code": "sleep",
+    "name": "Sommeil/Nuit",
+    "description": "Vous dormez profondément"
+  },
+  {
+    "code": "romantic",
+    "name": "Romantique",
+    "description": "Mode romantique ;)"
+  },
+  {
+    "code": "party",
+    "name": "Soirée",
+    "description": "C'est la fête à la maison !"
+  },
+  {
+    "code": "cinema",
+    "name": "Cinéma",
+    "description": "Vous regardez un film"
+  }
+]

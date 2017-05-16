@@ -1,0 +1,201 @@
+[
+  {
+    "code": "back-at-home",
+    "name": "Back at Home",
+    "description": "User is back at home",
+    "service": 0,
+    "category": "user",
+    "faIcon": "fa fa-home",
+    "iconColor": "bg-light-blue",
+    "params": [
+      {
+         "name": "House",
+         "variablename": "house",
+         "path": "/house"
+      },
+      {
+         "name": "User",
+         "variablename": "user",
+         "path": "/user"
+      }
+    ]
+  },
+  {
+    "code": "left-home",
+    "name": "Left Home",
+    "description": "User just left home",
+    "service": 0,
+    "category": "user",
+    "faIcon": "fa fa-home",
+    "iconColor": "bg-light-blue",
+    "params": [
+      {
+         "name": "House",
+         "variablename": "house",
+         "path": "/house"
+      },
+      {
+         "name": "User",
+         "variablename": "user",
+         "path": "/user"
+      }
+    ]
+  },
+  {
+    "code": "wake-up",
+    "name": "Wake Up",
+    "description": "When a user just woke up",
+    "service": 0,
+    "category": "user",
+    "faIcon": "fa fa-bed",
+    "iconColor": "bg-yellow"
+  },
+  {
+    "code": "going-to-sleep",
+    "name": "Going to Sleep",
+    "description": "When a user is going to sleep",
+    "service": 0,
+    "category": "user",
+    "faIcon": "fa fa-bed",
+    "iconColor": "bg-blue"
+  },
+  {
+    "code": "gladys-installed",
+    "name": "Gladys Installed",
+    "description": "When Gladys just installed",
+    "service": 0,
+    "category": "system",
+    "faIcon": "fa fa-desktop",
+    "iconColor": "bg-black"
+  },
+  {
+    "code": "gladys-updated",
+    "name": "Gladys updated",
+    "description": "Gladys has been updated !",
+    "service": 0,
+    "category": "system",
+    "faIcon": "fa fa-wrench",
+    "iconColor": "bg-black"
+  },
+  {
+    "code": "sunrise",
+    "name": "Sunrise",
+    "description": "The sun is rising",
+    "service": 0,
+    "category": "sun",
+    "faIcon": "fa fa-sun-o",
+    "iconColor": "bg-yellow",
+    "params": [
+      {
+         "name": "House",
+         "variablename": "house",
+         "path": "/house"
+      }
+    ]
+  },
+  {
+    "code": "sunset",
+    "name": "Sunset",
+    "description": "The sun sets",
+    "service": 0,
+    "category": "sun",
+    "faIcon": "fa fa-sun-o",
+    "iconColor": "bg-yellow",
+    "params": [
+      {
+         "name": "House",
+         "variablename": "house",
+         "path": "/house"
+      }
+    ]
+  },
+  {
+    "code": "alarm",
+    "name": "Alarm",
+    "description": "When an alarm fire.",
+    "service": 0,
+    "category": "alarm",
+    "faIcon": "fa fa-clock-o",
+    "iconColor": "bg-yellow",
+    "params": [
+      {
+         "name": "Alarm",
+         "variablename": "alarm",
+         "path": "/alarm"
+      }
+    ]
+  },
+  {
+    "code": "enter-area",
+    "name": "Enter Area",
+    "description": "When you enter in a specific area.",
+    "service": 0,
+    "category": "area",
+    "faIcon": "fa fa-map-marker",
+    "iconColor": "bg-black",
+    "params": [
+      {
+         "name": "Area",
+         "variablename": "id",
+         "path": "/area"
+      }
+    ]
+  },
+  {
+    "code": "left-area",
+    "name": "Left Area",
+    "description": "When you left a specific area.",
+    "service": 0,
+    "category": "area",
+    "faIcon": "fa fa-map-marker",
+    "iconColor": "bg-black",
+    "params": [
+      {
+         "name": "Area",
+         "variablename": "id",
+         "path": "/area"
+      }
+    ]
+  },
+  {
+    "code": "devicetype-new-value",
+    "name": "DeviceType new value",
+    "description": "Triggers for example when a lamp is on, when a sensor recorded a new value.",
+    "service": 0,
+    "category": "device",
+    "faIcon": "fa fa-circle-o",
+    "iconColor": "bg-light-blue",
+    "params": [
+      {
+         "name": "DeviceType",
+         "variablename": "devicetype",
+         "path": "/devicetype"
+      },
+      {
+        "name": "Value",
+        "variablename": "value"
+      }
+    ]
+  },
+  {
+    "code": "house-mode-changed",
+    "name": "House Mode changed",
+    "description": "This event is triggered when the mode of a house changed.",
+    "service": "mode",
+    "category": "house",
+    "faIcon": "fa fa-home",
+    "iconColor": "bg-blue",
+    "params": [
+      {
+        "name": "House",
+        "variablename": "house",
+        "path": "/house"
+      },
+      {
+        "name": "Mode",
+        "variablename": "mode",
+        "path": "/mode"
+      }
+    ]
+  }
+]

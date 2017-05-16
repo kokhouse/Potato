@@ -1,0 +1,124 @@
+[
+	{
+		"uuid": "04340a8b-a177-4247-aca5-5d12bfda6ce0",
+		"service": "deviceType",
+		"function": "exec",
+		"name": "DeviceType exec",
+		"description": "Change the state of a specific device",
+		"params": [
+			{
+				"name": "Device Type",
+				"variablename": "devicetype",
+				"path":  "/devicetype"
+			},
+			{
+				"name": "Value",
+				"variablename": "value"
+			}
+		]
+	},
+	{
+		"uuid": "5c311d0d-427b-4ae8-b470-2c693e58ab8e",
+		"service": "script",
+		"function": "exec",
+		"name": "Execute script",
+		"description": "Execute a given script",
+		"params": [
+			{
+				"name": "Script",
+				"variablename": "id",
+				"path": "/script"
+			}
+		]
+	},
+	{
+		"uuid": "c038bfb3-5c01-496a-8513-07806aa84401",
+		"service": "event",
+		"function": "create",
+		"name": "New Event",
+		"description": "Create a new event, which can start a scenario too.",
+		"params": [
+			{
+				"name": "Code",
+				"variablename": "eventtype",
+				"path" : "/eventtype"
+			},
+			{
+				"name": "User",
+				"variablename": "user",
+				"path" : "/user"
+			},
+			{
+				"name": "House",
+				"variablename": "house",
+				"path" : "/house"
+			},
+			{
+				"name": "Room",
+				"variablename": "room",
+				"path" : "/room"
+			}
+
+		]
+	},
+	{
+		"uuid": "103d5e06-47b7-4cd0-814f-e18bcfc77f02",
+		"service": "notification",
+		"function": "create",
+		"name": "New Notification",
+		"description": "Send you a notification threw the service you defined in parameters.",
+		"params": [
+			{
+				"name": "Title",
+				"variablename": "title"
+			},
+			{
+				"name": "Text",
+				"variablename": "text"
+			},
+			{
+				"name": "Priority",
+				"variablename": "priority"
+			},
+			{
+				"name": "Icon",
+				"variablename": "icon"
+			},
+			{
+				"name": "IconColor",
+				"variablename": "iconColor"
+			},
+			{
+				"name": "User",
+				"variablename": "user",
+				"path" : "/user"
+			}
+
+		]
+	},
+	{
+		"uuid": "8bc231a2-b0f2-4702-bee1-0858851abe73",
+		"service": "utils",
+		"function": "request",
+		"name": "Send an HTTP request",
+		"description": "Send a HTTP",
+		"params": [
+			{
+				"name": "Url",
+				"variablename": "url"
+			},
+			{
+				"name": "Method (GET/POST...)",
+				"variablename": "method"
+			},
+			{
+				"name": "Body",
+				"variablename": "body"
+			},
+			{
+				"name": "Json (true/false)",
+				"variablename": "json"
+			}
+		]
+	}
+]

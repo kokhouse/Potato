@@ -1,0 +1,16 @@
+[
+	{
+		"uuid": "3646ae97-9a4e-40fd-ba9e-b6089db6566f",
+		"name": "Empty house",
+		"description": "If the given house is empty",
+		"service": "house",
+		"function": "isEmpty",
+		"params": [
+			{
+				"name": "House",
+				"variablename": "house",
+				"path": "/house"
+			}
+		]
+	}
+]
